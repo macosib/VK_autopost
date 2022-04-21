@@ -1,0 +1,3 @@
+<class 'datetime.date'> --- <class 'datetime.time'> Error
+<class 'datetime.date'> --- <class 'datetime.time'> Error
+<class 'datetime.date'> --- <class 'datetime.time'> Error
