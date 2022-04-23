@@ -1,8 +1,11 @@
-token='b7e3f2ad4e567c10832011b2a506a0f480884cbdf7f97cd63eb8c1ecfcd7e6137b08b6472269aeadb00ee'
-# owner_id = '-212823741'
-owner_id = '-956149'
+token='d7200b50782bee22b0bcea5321b4e5322b9056fec35b8c9ad95d4fcb1f50fe06aee920e540d2d5947e8ea'
+# owner_id_my_group = '-212823741'
+owner_id_main_arenda = '-956149'
+owner_id_altay_more = '-974577'
+owner_id_arenda_3 = '-56550271'
+topic_id_main_arenda = '30304927'
 version = '5.131'
-time_to_sleep = 10800
+time_to_sleep = 28800
 path = 'logfile.txt'
 
 

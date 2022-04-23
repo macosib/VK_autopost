@@ -1,3 +1,19 @@
 <class 'datetime.date'> --- <class 'datetime.time'> Error
 <class 'datetime.date'> --- <class 'datetime.time'> Error
 <class 'datetime.date'> --- <class 'datetime.time'> Error
+<class 'datetime.date'> --- <class 'datetime.time'> Error
+<class 'datetime.date'> --- <class 'datetime.time'> Error
+<class 'datetime.date'> --- <class 'datetime.time'> Error
+<class 'datetime.date'> --- <class 'datetime.time'> Error
+<class 'datetime.date'> --- <class 'datetime.time'> Error
+<class 'datetime.date'> --- <class 'datetime.time'> Error
+<class 'datetime.date'> --- <class 'datetime.time'> Error
+<class 'datetime.date'> --- <class 'datetime.time'> Error
+<class 'datetime.date'> --- <class 'datetime.time'> Error
+<class 'datetime.date'> --- <class 'datetime.time'> Error
+<class 'datetime.date'> --- <class 'datetime.time'> Error
+<attribute 'day' of 'datetime.date' objects> --- 00:00:00 Error
+<attribute 'day' of 'datetime.date' objects> --- 00:00:00 Error
+<attribute 'day' of 'datetime.date' objects> --- 00:00:00 Error
+<attribute 'day' of 'datetime.date' objects> --- 00:00:00 Error
+<attribute 'day' of 'datetime.date' objects> --- 00:00:00 Error
