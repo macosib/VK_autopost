@@ -1,19 +1,7 @@
-<class 'datetime.date'> --- <class 'datetime.time'> Error
-<class 'datetime.date'> --- <class 'datetime.time'> Error
-<class 'datetime.date'> --- <class 'datetime.time'> Error
-<class 'datetime.date'> --- <class 'datetime.time'> Error
-<class 'datetime.date'> --- <class 'datetime.time'> Error
-<class 'datetime.date'> --- <class 'datetime.time'> Error
-<class 'datetime.date'> --- <class 'datetime.time'> Error
-<class 'datetime.date'> --- <class 'datetime.time'> Error
-<class 'datetime.date'> --- <class 'datetime.time'> Error
-<class 'datetime.date'> --- <class 'datetime.time'> Error
-<class 'datetime.date'> --- <class 'datetime.time'> Error
-<class 'datetime.date'> --- <class 'datetime.time'> Error
-<class 'datetime.date'> --- <class 'datetime.time'> Error
-<class 'datetime.date'> --- <class 'datetime.time'> Error
-<attribute 'day' of 'datetime.date' objects> --- 00:00:00 Error
-<attribute 'day' of 'datetime.date' objects> --- 00:00:00 Error
-<attribute 'day' of 'datetime.date' objects> --- 00:00:00 Error
-<attribute 'day' of 'datetime.date' objects> --- 00:00:00 Error
-<attribute 'day' of 'datetime.date' objects> --- 00:00:00 Error
+5 -- User authorization failed: invalid access_token (4).2022-04-23 14:44:33.208682
+5 -- User authorization failed: invalid access_token (4).2022-04-23 14:44:38.434362
+Error ID: 5 -- User authorization failed: invalid access_token (4).2022-04-23 14:45:36.930022
+Error ID: 5, Error messageUser authorization failed: invalid access_token (4).2022-04-23 14:46:01.340529
+Error ID: 5, Error message: User authorization failed: invalid access_token (4).2022-04-23 14:46:18.201051
+Error ID: 5, Error message: User authorization failed: invalid access_token (4).Datetime: 2022-04-23 14:46:47.686618
+Error ID: 5, Error message: User authorization failed: invalid access_token (4).,Datetime: 2022-04-23 14:47:00.330620
