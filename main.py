@@ -44,7 +44,7 @@ class VkPost():
             VkPost.__error_func(response.json().get('error'))
             raise Exception
         else:
-            print(f'Функция {self.send_post.__name__} отработала успешно {datetime.datetime.now()}')
+            print(f'Функция {self.send_post.__name__} успешно отработала {datetime.datetime.now()}')
 
     def send_post_board(self):
         get_foto_list_url = self.url + 'board.createComment'
@@ -54,7 +54,7 @@ class VkPost():
             VkPost.__error_func(response.json().get('error'))
             raise Exception
         else:
-            print(f'Функция {self.send_post_board.__name__} отработала успешно {datetime.datetime.now()}')
+            print(f'Функция {self.send_post_board.__name__} успешно отработала {datetime.datetime.now()}')
 
 def main():
     def start():
@@ -63,13 +63,13 @@ def main():
         vkposter_altay_arenda_3 = VkPost(config.owner_id_arenda_3)
         while True:
             try:
-                # vkposter_main_arenda.send_post()
-                # time.sleep(0.33)
+                vkposter_main_arenda.send_post()
+                time.sleep(0.33)
                 vkposter_main_arenda.send_post_board()
-                # time.sleep(0.33)
-                # vkposter_altay_more.send_post()
-                # time.sleep(0.33)
-                # vkposter_altay_arenda_3.send_post()
+                time.sleep(0.33)
+                vkposter_altay_more.send_post()
+                time.sleep(0.33)
+                vkposter_altay_arenda_3.send_post()
                 time.sleep(config.time_to_sleep)
             except:
                 time.sleep(1200)
