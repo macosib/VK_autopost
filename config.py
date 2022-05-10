@@ -5,7 +5,7 @@ owner_id_altay_more = '-974577'
 owner_id_arenda_3 = '-56550271'
 topic_id_main_arenda = '30304927'
 version = '5.131'
-time_to_sleep = 28800
+time_to_sleep = 8500
 path = 'logfile.txt'
 
 
