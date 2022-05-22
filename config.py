@@ -1,4 +1,4 @@
-token='d7200b50782bee22b0bcea5321b4e5322b9056fec35b8c9ad95d4fcb1f50fe06aee920e540d2d5947e8ea'
+token=''
 # owner_id_my_group = '-212823741'
 owner_id_main_arenda = '-956149'
 owner_id_altay_more = '-974577'
