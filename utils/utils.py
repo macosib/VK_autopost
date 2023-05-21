@@ -1,16 +1,8 @@
-token=''
-# owner_id_my_group = '-212823741'
-owner_id_main_arenda = '-956149'
-owner_id_altay_more = '-974577'
-owner_id_arenda_3 = '-56550271'
-topic_id_main_arenda = '30304927'
-version = '5.131'
 time_to_sleep = 8500
-path = 'logfile.txt'
+
+photos = "photo10900942_457245009,photo10900942_457245020,photo10900942_457245014,photo10900942_457245019,photo10900942_457245016,photo10900942_457245025,photo10900942_457245026"
 
 
-
-photos = 'photo10900942_457245009,photo10900942_457245020,photo10900942_457245014,photo10900942_457245019,photo10900942_457245016,photo10900942_457245025,photo10900942_457245026'
 message = """Семейный гостевой комплекс SANTA MARINA - идеальное место для отдыха с детьми. Наш корабль точно оценят ваши дети ⛵
 
 Сдаю уютные домики и гостевые номера в г. Яровое.
@@ -34,3 +26,12 @@ __________
 📍 Менделеева 81, г. Яровое
 ✔ Заселение без посредников"""
 
+
+info = """
+При запросе токена надо ставить!!!!!!!!! redirect_uri=https://oauth.vk.com/blank.html
+
+https://oauth.vk.com/authorize?client_id=8144194&redirect_uri=https://oauth.vk.com/blank.html&display=page&scope=friends,photos,wall,docs,groups,offline&response_type=token&state=12345&revoke=1&v=5.131
+
+
+
+"""
