@@ -57,7 +57,7 @@ class VkApi:
         endpoint = f"{self.base_url}/wall.get"
         params_for_wall_post = {
             "owner_id": self.owner_id,
-            "count": 10,
+            "count": 7,
             "offset": 0
         }
 
