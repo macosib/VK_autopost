@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    command: /usr/local/bin/python3 /app/main.py
+    restart: always
+
+    environment:
+      VERSION_VK: ${VERSION_VK}
+      TOKEN: ${TOKEN}
+      OWNER_ID_YAROVOE_ARENDA: ${OWNER_ID_YAROVOE_ARENDA}
+      OWNER_ID_ALTAY_SEA: ${OWNER_ID_ALTAY_SEA}
+      OWNER_ID_CRAZY_SUMMER: ${OWNER_ID_CRAZY_SUMMER}
+      OWNER_ID_MY: ${OWNER_ID_MY}
+      TOPIC_ID_YAROVOE_ARENDA: ${TOPIC_ID_YAROVOE_ARENDA}
+#    command: sh script.sh
+
+    volumes:
+      - .:/app
