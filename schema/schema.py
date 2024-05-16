@@ -24,16 +24,16 @@ class Attachment(BaseModel):
     photo: Photo | None
 
 class Comments(BaseModel):
-    can_post: int
-    count: int
-    groups_can_post: bool
+    can_post: int | None
+    count: int | None
+    groups_can_post: bool | None
 
 class Likes(BaseModel):
-    can_like: int
-    count: int
-    user_likes: int
-    can_publish: int
-    repost_disabled: bool
+    can_like: int | None
+    count: int | None
+    user_likes: int | None
+    can_publish: int | None
+    repost_disabled: bool | None
 
 class Reposts(BaseModel):
     count: int

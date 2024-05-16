@@ -22,6 +22,9 @@ class Settings(BaseSettings):
     owner_id_altay_sea: str = Field(env="OWNER_ID_ALTAY_SEA")
     owner_id_crazy_summer: str = Field(env="OWNER_ID_CRAZY_SUMMER")
     topic_id_yarovoe_arenda: str = Field(env="TOPIC_ID_YAROVOE_ARENDA")
+    topic_id_2024: str = Field(env="TOPIC_ID_YAROVOE_2024")
+    topic_id_2024_1: str = Field(env="TOPIC_ID_YAROVOE_2024_1")
+    topic_id_2024_2: str = Field(env="TOPIC_ID_YAROVOE_2024_2")
     version_vk: str = Field(env="VERSION_VK")
 
     class Config:

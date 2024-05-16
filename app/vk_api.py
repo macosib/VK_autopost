@@ -26,10 +26,10 @@ class VkApi:
             "message": utils.message,
             "attachments": utils.photos,
         }
-
         response = requests.post(
             url=endpoint, params={**self.params, **params_for_wall_post}
         )
+        print(response.json())
         if response.status_code != 200 or response.json().get("error"):
             logger.error(
                 f"Не удалось создать пост, статус код - {response.status_code}, ответ сервера - {response.text}")
@@ -71,22 +71,22 @@ class VkApi:
         return APIResponsePostGet.parse_obj(response.json())
 
 
-    def send_post_topic(self):
-        endpoint = f"{self.base_url}/board.createComment"
-        params_for_wall_post_board = {
-            "group_id": self.owner_id[1:],
-            "message": utils.message,
-            "attachments": utils.photos,
-            "topic_id": settings.topic_id_yarovoe_arenda,
-        }
-        response = requests.post(
-            endpoint, params={**self.params, **params_for_wall_post_board}
-        )
-        if response.status_code != 200 or response.json().get("error"):
-            logger.error(
-                f"Не удалось создать пост, статус код - {response.status_code}, ответ сервера - {response.text}")
-            return
-        logger.info(f"Создана запись в обсуждении сообщества {self.owner_id} - {response.json()}")
-        return APIResponsePostTopic.parse_obj(response.json())
+    # def send_post_topic(self):
+    #     endpoint = f"{self.base_url}/board.createComment"
+    #     params_for_wall_post_board = {
+    #         "group_id": self.owner_id[1:],
+    #         "message": utils.message,
+    #         "attachments": utils.photos,
+    #         "topic_id": settings.topic_id_yarovoe_arenda,
+    #     }
+    #     response = requests.post(
+    #         endpoint, params={**self.params, **params_for_wall_post_board}
+    #     )
+    #     if response.status_code != 200 or response.json().get("error"):
+    #         logger.error(
+    #             f"Не удалось создать пост, статус код - {response.status_code}, ответ сервера - {response.text}")
+    #         return
+    #     logger.info(f"Создана запись в обсуждении сообщества {self.owner_id} - {response.json()}")
+    #     return APIResponsePostTopic.parse_obj(response.json())
 
 
