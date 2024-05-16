@@ -25,6 +25,7 @@ class Settings(BaseSettings):
     topic_id_2024: str = Field(env="TOPIC_ID_YAROVOE_2024")
     topic_id_2024_1: str = Field(env="TOPIC_ID_YAROVOE_2024_1")
     topic_id_2024_2: str = Field(env="TOPIC_ID_YAROVOE_2024_2")
+    topic_id_2024_3: str = Field(env="TOPIC_ID_YAROVOE_2024_3")
     version_vk: str = Field(env="VERSION_VK")
 
     class Config:

@@ -15,14 +15,16 @@ def start():
     new2024 = VkApi(settings.topic_id_2024)
     new2024_1 = VkApi(settings.topic_id_2024_1)
     new2024_2 = VkApi(settings.topic_id_2024_2)
+    new2024_3 = VkApi(settings.topic_id_2024_3)
     while True:
         try:
-            check_our_post_in_wall(yarovoe_arenda)
-            check_our_post_in_wall(altay_sea)
-            check_our_post_in_wall(crazy__summer)
-            check_our_post_in_wall(new2024)
-            check_our_post_in_wall(new2024_1)
-            check_our_post_in_wall(new2024_2)
+            # check_our_post_in_wall(yarovoe_arenda)
+            # check_our_post_in_wall(altay_sea)
+            # check_our_post_in_wall(crazy__summer)
+            # check_our_post_in_wall(new2024)
+            # check_our_post_in_wall(new2024_1)
+            # check_our_post_in_wall(new2024_2)
+            check_our_post_in_wall(new2024_3)
         except Exception as err:
             logger.error(err)
             continue
