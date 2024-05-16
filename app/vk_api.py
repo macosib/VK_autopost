@@ -29,7 +29,6 @@ class VkApi:
         response = requests.post(
             url=endpoint, params={**self.params, **params_for_wall_post}
         )
-        print(response.json())
         if response.status_code != 200 or response.json().get("error"):
             logger.error(
                 f"Не удалось создать пост, статус код - {response.status_code}, ответ сервера - {response.text}")
