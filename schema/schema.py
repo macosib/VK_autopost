@@ -47,7 +47,7 @@ class Item(BaseModel):
     donut: dict
     comments: Comments
     marked_as_ads: int
-    short_text_rate: float
+    short_text_rate: float | None
     hash: str
     type: str
     attachments: List[Attachment] | None
