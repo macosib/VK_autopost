@@ -32,7 +32,7 @@ __________
 info = """
 При запросе токена надо ставить!!!!!!!!! redirect_uri=https://oauth.vk.com/blank.html
 
-https://oauth.vk.com/authorize?client_id=8144194&redirect_uri=https://oauth.vk.com/blank.html&display=page&scope=friends,photos,wall,docs,groups,offline&response_type=token&state=12345&revoke=1&v=5.131
+https://oauth.vk.com/authorize?client_id=8144194&redirect_uri=https://oauth.vk.com/blank.html&display=page&scope=friends,photos,wall,docs,groups,offline&response_type=token&state=12345&revoke=1&v=5.199
 
 
 
