@@ -27,7 +27,6 @@ def start():
             check_our_post_in_wall(new2024_3)
         except Exception as err:
             logger.error(err)
-            continue
         sleep(180)
 
 
@@ -41,5 +40,5 @@ def check_our_post_in_wall(vk: VkApi):
         vk.delete_post_wall(vk.last_post_id)
         current_post = vk.send_post_wall()
         vk.last_post_id = current_post.response.post_id
-
-
+    #
+    #
