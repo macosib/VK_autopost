@@ -28,7 +28,7 @@ def start():
         except Exception as err:
             logger.error(err)
             continue
-        sleep(10)
+        sleep(180)
 
 
 def check_our_post_in_wall(vk: VkApi):
