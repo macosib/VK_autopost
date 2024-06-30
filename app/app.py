@@ -19,11 +19,29 @@ def start():
     while True:
         try:
             check_our_post_in_wall(yarovoe_arenda)
+        except Exception as err:
+            logger.error(err)
+        try:
             check_our_post_in_wall(altay_sea)
+        except Exception as err:
+            logger.error(err)
+        try:
             check_our_post_in_wall(crazy__summer)
+        except Exception as err:
+            logger.error(err)
+        try:
             check_our_post_in_wall(new2024)
+        except Exception as err:
+            logger.error(err)
+        try:
             check_our_post_in_wall(new2024_1)
+        except Exception as err:
+            logger.error(err)
+        try:
             check_our_post_in_wall(new2024_2)
+        except Exception as err:
+            logger.error(err)
+        try:
             check_our_post_in_wall(new2024_3)
         except Exception as err:
             logger.error(err)
