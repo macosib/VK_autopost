@@ -2,7 +2,8 @@ import os
 from pathlib import Path
 
 from dotenv import load_dotenv
-from pydantic import BaseSettings, Field
+from pydantic import Field
+from pydantic_settings import BaseSettings
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -16,22 +17,36 @@ set_env()
 
 
 class Settings(BaseSettings):
-    token: str = Field(env="TOKEN")
-    owner_id_my: str = Field(env="OWNER_ID_MY")
-    owner_id_yarovoe_arenda: str = Field(env="OWNER_ID_YAROVOE_ARENDA")
-    owner_id_altay_sea: str = Field(env="OWNER_ID_ALTAY_SEA")
-    owner_id_crazy_summer: str = Field(env="OWNER_ID_CRAZY_SUMMER")
-    topic_id_yarovoe_arenda: str = Field(env="TOPIC_ID_YAROVOE_ARENDA")
-    topic_id_2024: str = Field(env="TOPIC_ID_YAROVOE_2024")
-    topic_id_2024_1: str = Field(env="TOPIC_ID_YAROVOE_2024_1")
-    topic_id_2024_2: str = Field(env="TOPIC_ID_YAROVOE_2024_2")
-    topic_id_2024_3: str = Field(env="TOPIC_ID_YAROVOE_2024_3")
-    version_vk: str = Field(env="VERSION_VK")
+    token: str = Field(alias="TOKEN")
+
+    owner_id_my: str = Field(alias="OWNER_ID_MY")
+    owner_id_altay_sea: str = Field(alias="OWNER_ID_ALTAY_SEA")
+    owner_id_crazy_summer: str = Field(alias="OWNER_ID_CRAZY_SUMMER")
+    owner_id_club117687082: str = Field(alias="OWNER_ID_CLUB117687082")
+
+    version_vk: str = Field(alias="VERSION_VK", default="5.199")
 
     class Config:
         case_sensitive = True
         env_file = ".env"
         env_file_encoding = "utf-8"
+
+
+OWNER_ID_ALTAY_SEA = "-974577"
+# OWNER_ID_ALTAY_SEA = "https://vk.com/altaysea?from=groups" 13к
+
+OWNER_ID_CRAZY_SUMMER = "-56550271"
+# OWNER_ID_CRAZY_SUMMER = "https://vk.com/crazy__summer?from=groups" 4.4к
+
+OWNER_ID_CLUB117687082 = "-117687082"
+# OWNER_ID_CLUB117687082 = "https://vk.com/club117687082?from=groups" 8.3k
+
+OWNER_ID_JAROVOE22 = "-146076175"
+# OWNER_ID_JAROVOE22 = "https://vk.com/jarovoe22?from=groups" 2.7к
+
+OWNER_ID_YAROVOE_ARENDA = "-145007828"
+# OWNER_ID_YAROVOE_ARENDA = "https://vk.com/yarovoe_arenda?from=groups" 2.2k
+
 
 
 settings = Settings()

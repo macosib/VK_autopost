@@ -7,60 +7,8 @@ class Size(BaseModel):
     width: int
     url: str
 
-class Photo(BaseModel):
-    album_id: int
-    date: int
-    id: int
-    owner_id: int
-    access_key: str
-    post_id: int | None
-    sizes: List[Size]
-    text: str
-    user_id: int | None
-    has_tags: bool
-
-class Attachment(BaseModel):
-    type: str
-    photo: Photo | None
-
-class Comments(BaseModel):
-    can_post: int | None
-    count: int | None
-    groups_can_post: bool | None
-
-class Likes(BaseModel):
-    can_like: int | None
-    count: int | None
-    user_likes: int | None
-    can_publish: int | None
-    repost_disabled: bool | None
-
-class Reposts(BaseModel):
-    count: int
-    user_reposted: int
-
-class PostSource(BaseModel):
-    platform: str | None
-    type: str
-
 class Item(BaseModel):
-    donut: dict
-    comments: Comments
-    marked_as_ads: int
-    short_text_rate: float | None
-    hash: str
-    type: str
-    attachments: List[Attachment] | None
-    date: int
-    from_id: int
     id: int
-    is_favorite: bool
-    likes: Likes
-    owner_id: int
-    post_source: PostSource | None
-    post_type: str
-    reposts: Reposts
-    text: str
 
 class Response(BaseModel):
     count: int

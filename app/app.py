@@ -9,18 +9,13 @@ logger = get_logger(__name__)
 
 
 def start():
-    yarovoe_arenda = VkApi(settings.owner_id_yarovoe_arenda)
+    print()
     altay_sea = VkApi(settings.owner_id_altay_sea)
     crazy__summer = VkApi(settings.owner_id_crazy_summer)
-    new2024 = VkApi(settings.topic_id_2024)
-    new2024_1 = VkApi(settings.topic_id_2024_1)
-    new2024_2 = VkApi(settings.topic_id_2024_2)
-    new2024_3 = VkApi(settings.topic_id_2024_3)
+    club117687082 = VkApi(settings.owner_id_club117687082)
+    our = VkApi(settings.owner_id_my)
+
     while True:
-        try:
-            check_our_post_in_wall(yarovoe_arenda)
-        except Exception as err:
-            logger.error(err)
         try:
             check_our_post_in_wall(altay_sea)
         except Exception as err:
@@ -30,21 +25,11 @@ def start():
         except Exception as err:
             logger.error(err)
         try:
-            check_our_post_in_wall(new2024)
+            check_our_post_in_wall(club117687082)
         except Exception as err:
             logger.error(err)
-        try:
-            check_our_post_in_wall(new2024_1)
-        except Exception as err:
-            logger.error(err)
-        try:
-            check_our_post_in_wall(new2024_2)
-        except Exception as err:
-            logger.error(err)
-        try:
-            check_our_post_in_wall(new2024_3)
-        except Exception as err:
-            logger.error(err)
+
+
         sleep(180)
 
 
@@ -58,5 +43,3 @@ def check_our_post_in_wall(vk: VkApi):
         vk.delete_post_wall(vk.last_post_id)
         current_post = vk.send_post_wall()
         vk.last_post_id = current_post.response.post_id
-    #
-    #

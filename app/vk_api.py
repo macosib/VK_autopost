@@ -25,6 +25,8 @@ class VkApi:
             "owner_id": self.owner_id,
             "message": utils.message,
             "attachments": utils.photos,
+            "close_comments": 1
+
         }
         response = requests.post(
             url=endpoint, params={**self.params, **params_for_wall_post}
@@ -50,7 +52,7 @@ class VkApi:
                 f"Не удалось удалить запись {post_id}, статус код - {response.status_code}, ответ сервера - {response.text}")
             return
         logger.info(f"Удалена запись {post_id} в сообществе {self.owner_id} - {response.json()}")
-        return APIResponseDeletePost.parse_obj(response.json())
+        return APIResponseDeletePost.model_validate(response.json())
 
     def get_post_wall(self) -> APIResponsePostGet | None:
         endpoint = f"{self.base_url}/wall.get"
@@ -59,7 +61,6 @@ class VkApi:
             "count": 7,
             "offset": 0
         }
-
         response = requests.post(
             url=endpoint, params={**self.params, **params_for_wall_post}
         )
@@ -67,25 +68,4 @@ class VkApi:
             logger.error(
                 f"Не удалось получить посты со стены сообщества {self.owner_id}, статус код - {response.status_code}, ответ сервера - {response.text}")
             return
-        return APIResponsePostGet.parse_obj(response.json())
-
-
-    # def send_post_topic(self):
-    #     endpoint = f"{self.base_url}/board.createComment"
-    #     params_for_wall_post_board = {
-    #         "group_id": self.owner_id[1:],
-    #         "message": utils.message,
-    #         "attachments": utils.photos,
-    #         "topic_id": settings.topic_id_yarovoe_arenda,
-    #     }
-    #     response = requests.post(
-    #         endpoint, params={**self.params, **params_for_wall_post_board}
-    #     )
-    #     if response.status_code != 200 or response.json().get("error"):
-    #         logger.error(
-    #             f"Не удалось создать пост, статус код - {response.status_code}, ответ сервера - {response.text}")
-    #         return
-    #     logger.info(f"Создана запись в обсуждении сообщества {self.owner_id} - {response.json()}")
-    #     return APIResponsePostTopic.parse_obj(response.json())
-
-
+        return APIResponsePostGet.model_validate(response.json())
