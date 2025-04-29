@@ -23,6 +23,8 @@ class Settings(BaseSettings):
     owner_id_altay_sea: str = Field(alias="OWNER_ID_ALTAY_SEA")
     owner_id_crazy_summer: str = Field(alias="OWNER_ID_CRAZY_SUMMER")
     owner_id_club117687082: str = Field(alias="OWNER_ID_CLUB117687082")
+    telegram_bot_token: str = Field(alias="TG_TOKEN")
+    telegram_chat_id: int = Field(alias="TH_CHAT_ID")
 
     version_vk: str = Field(alias="VERSION_VK", default="5.199")
 
