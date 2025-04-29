@@ -9,7 +9,7 @@ logger = get_logger(__name__)
 
 
 def start():
-    print()
+    print("Приложение запущено")
     altay_sea = VkApi(settings.owner_id_altay_sea)
     crazy__summer = VkApi(settings.owner_id_crazy_summer)
     club117687082 = VkApi(settings.owner_id_club117687082)
