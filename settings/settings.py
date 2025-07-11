@@ -22,7 +22,8 @@ class Settings(BaseSettings):
     owner_id_my: str = Field(alias="OWNER_ID_MY")
     owner_id_altay_sea: str = Field(alias="OWNER_ID_ALTAY_SEA")
     owner_id_crazy_summer: str = Field(alias="OWNER_ID_CRAZY_SUMMER")
-    owner_id_club117687082: str = Field(alias="OWNER_ID_CLUB117687082")
+    owner_id_jarovoe22: str = Field(alias="OWNER_ID_JAROVOE22")
+    owner_id_jarovoe_arenda: str = Field(alias="OWNER_ID_YAROVOE_ARENDA")
     telegram_bot_token: str = Field(alias="TG_TOKEN")
     telegram_chat_id: int = Field(alias="TH_CHAT_ID")
 
@@ -40,15 +41,10 @@ OWNER_ID_ALTAY_SEA = "-974577"
 OWNER_ID_CRAZY_SUMMER = "-56550271"
 # OWNER_ID_CRAZY_SUMMER = "https://vk.com/crazy__summer?from=groups" 4.4к
 
-OWNER_ID_CLUB117687082 = "-117687082"
-# OWNER_ID_CLUB117687082 = "https://vk.com/club117687082?from=groups" 8.3k
-
 OWNER_ID_JAROVOE22 = "-146076175"
 # OWNER_ID_JAROVOE22 = "https://vk.com/jarovoe22?from=groups" 2.7к
 
 OWNER_ID_YAROVOE_ARENDA = "-145007828"
 # OWNER_ID_YAROVOE_ARENDA = "https://vk.com/yarovoe_arenda?from=groups" 2.2k
-
-
 
 settings = Settings()

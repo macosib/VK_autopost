@@ -40,12 +40,16 @@ def start():
     print("Приложение запущено")
     altay_sea = VkApi(settings.owner_id_altay_sea)
     crazy__summer = VkApi(settings.owner_id_crazy_summer)
-    club117687082 = VkApi(settings.owner_id_club117687082)
+    jarovoe22 = VkApi(settings.owner_id_jarovoe22)
+    jarovoe_arenda = VkApi(settings.owner_id_jarovoe_arenda)
     our = VkApi(settings.owner_id_my)
 
     while True:
-        for vk_instance in (altay_sea, crazy__summer, club117687082):
-            check_our_post_in_wall(vk_instance)
+        for vk_instance in (altay_sea, crazy__summer, jarovoe22, jarovoe_arenda):
+            try:
+                check_our_post_in_wall(vk_instance)
+            except Exception:
+                logger.exception(f"Ошибка для {vk_instance}")
         sleep(180)
 
 
