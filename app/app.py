@@ -46,6 +46,7 @@ def start():
 
     while True:
         for vk_instance in (altay_sea, crazy__summer, jarovoe22, jarovoe_arenda):
+            sleep(1)
             try:
                 check_our_post_in_wall(vk_instance)
             except Exception:
