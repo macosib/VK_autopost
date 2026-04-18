@@ -37,12 +37,12 @@ def send_telegram_message(message: str):
 
 @notify_on_error
 def start():
-    print("Приложение запущено")
     altay_sea = VkApi(settings.owner_id_altay_sea)
     crazy__summer = VkApi(settings.owner_id_crazy_summer)
     jarovoe22 = VkApi(settings.owner_id_jarovoe22)
     jarovoe_arenda = VkApi(settings.owner_id_jarovoe_arenda)
-    our = VkApi(settings.owner_id_my)
+
+    # our = VkApi(settings.owner_id_my)
 
     while True:
         for vk_instance in (altay_sea, crazy__summer, jarovoe22, jarovoe_arenda):
